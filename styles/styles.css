@@ -1,0 +1,141 @@
+/* Resetear los estilos al iniciar la página */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Definir el Color de fondo en la página  */
+body{
+    background-color: #965FFA;
+}
+
+.parrafos{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #FAF25F;
+    text-align: left;
+    margin: 17px;
+    padding: 17px;
+}
+
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+/* Definir el Estilo de los títulos */
+.titles{
+    font-size: 27px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #FAF25F;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Definir Estilos para efecto Hover en las imágenes. */
+.contenedor{
+	margin: 10px;
+    padding: 10px;
+    width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.contenedor figure{
+	position: relative;
+	width: 720px;
+    height: 480px;
+	overflow: hidden;
+	border-radius: 17px;
+	box-shadow: 0px 2px 7px rgba(0,0,0,0.30);
+	/* cursor: pointer; */
+}
+
+.contenedor figure img{
+	width: 100%;
+	height: 100%;
+	transition: all 256ms ease-out;
+}
+
+.contenedor figure .capa{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(82,31,173,0.5);
+	transition: all 256ms ease-out;	
+	opacity: 0;
+	visibility: hidden;
+	text-align: right;
+}
+
+.contenedor figure:hover > .capa{
+	opacity: 1;
+	visibility: visible;
+}
+
+.contenedor figure:hover > .capa h3{
+	margin-top: 70px;
+	margin-bottom: 19px;
+}
+
+.contenedor figure .capa h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 37px;
+    text-align: center;
+	margin-top: 70px;
+	margin-bottom: 19px;
+	color: #FAF25F;
+	font-weight: 400px;
+	margin-bottom: 10px;
+	margin-top: 17px;
+	transition: all 256ms ease-out;	
+}
+
+.contenedor figure .capa p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+	color: #FFF87A;
+	font-size: 27px;
+	line-height: 2;
+	width: 100%;
+	max-width: 600px;
+	margin: auto;
+}
+
+.contenedor figure:hover > img{
+	transform: scale(1.2);
+}
+
+/* ESTILOS PARA EL BOTÓN DEL LINK */
+.zelda{
+    text-align: center;
+    margin: 27px;
+    padding: 27px;
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #965FFA;
+    color: #F23030;
+    z-index: 99;
+    border-radius: 10px;
+    transition: all 224ms ease 0ms;
+    border-color: #965FFA
+}
+.zelda:hover{
+    text-align: center;
+    margin: 27px;
+    padding: 27;
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 27px;
+    background-color: #FAF25F;
+    color: #ADA731;
+	transform: translateX(17px);
+    border-color: #ADA731
+}
